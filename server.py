@@ -1,6 +1,6 @@
 import spotipy, flask, json
 
-a = spotipy.Spotify(auth_manager=spotipy.oauth2.SpotifyClientCredentials(client_id="714dc4b9b4354f97982be83b2b76b4d5", client_secret="4d1f590c40d043329305965fb7c40d49"))
+a = spotipy.Spotify(auth_manager=spotipy.oauth2.SpotifyClientCredentials(client_id="", client_secret=""))
 s = flask.Flask('')
 @s.route('/')
 def bruh():return "You are not supposed to be here."
