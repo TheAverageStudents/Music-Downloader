@@ -1,0 +1,57 @@
+/*
+    Setup
+*/
+
+@font-face {
+    font-family: TheHand;
+    src: url("../Fonts/PatrickHand-Regular.ttf") format("truetype");
+}
+
+/*
+    Preload
+*/
+
+#BeginningLoader{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    border: 0.5vh solid white;
+    border-top: 0.5vh solid #3498db;
+    animation: load 1000ms infinite;
+    position: fixed;
+    left: calc(50vw - 2.5vh);
+    top: 45vh;
+}
+
+#BeginningLoader[loaded=true]{
+    opacity: 0;
+}
+
+/*
+    Common styles
+*/
+
+#Sec2{opacity: 0;}
+
+#QueryInput[type="spotify"]{color: lightgreen;}
+#QueryInput[type="youtube"]{color: red;}
+#QueryInput[type="search"]{color: pink;}
+
+
+
+
+::selection{background-color: pink;}
+
+
+html{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    transition: none;
+    font-family: TheHand;
+}
+
+*{
+    transition: 500ms ease-in;
+}

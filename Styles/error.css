@@ -1,0 +1,41 @@
+@font-face {
+    font-family: TheHand;
+    src: url("../Fonts/PatrickHand-Regular.ttf") format("truetype");
+}
+
+#coverup2{
+    height: 8vh;
+}
+
+footer{
+    position: fixed;
+    height: 5vh;
+    bottom: 2vh;
+}
+
+#feedback{
+    height: 4vh;
+    width: 8vw;
+    border-radius: 2vh;
+    border: solid white;
+    background-color: black;
+    color: white;
+    animation: appear 5s;
+}
+
+#feedback:hover{
+    border: dashed pink;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: TheHand;
+    font-size: 5vh;
+    color: white;
+}

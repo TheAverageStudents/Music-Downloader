@@ -1,0 +1,14 @@
+68,570 bytes/second
+So if I can let people use 350mb storage, max overall duration I can allow is
+    5104 seconds OR  min. 85:36 min
+    I'll just round this to 85:30 that is 5130
+Change of plans, lets do 50min only.
+    50min = 50 * 60 = 3000sec
+
+Wow, I was downloading video and nto audio all this time.
+New stuff:
+40.8mb / 2507 seconds = 16,274 bytes/second
+I'm letting people use 200 mb storage, so max overall duration I can allow is
+    12,289 seconds OR 204.81 min.
+    I'll just round this off to 200 min. Thats is 12,000 seconds.
+

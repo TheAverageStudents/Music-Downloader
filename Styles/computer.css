@@ -1,0 +1,191 @@
+/*
+    Define a few things.
+*/
+
+@keyframes load {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        position: fixed;
+        left: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from{opacity: 1;}
+    to{position: fixed; left: 0; opacity: 0;}
+}
+
+@keyframes fade {
+    from{opacity: 1;}to{opacity: 0;}
+}
+
+@keyframes appear2 {
+    from{opacity: 0;}to{opacity: 1;}
+}
+
+@keyframes enlargeDownloadOption {
+    0%{}50%{height: 28vh; width: 28vh; margin-top: 0;}100%{height: 25vh; width: 25vh; margin-top: 0;}
+}
+
+/*
+    Loaded Page
+*/
+
+#HeadingText{
+    font-size: 8vh;
+    border-bottom: solid white;
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#coverup{
+    height: 16vh;
+}
+
+#Page *{opacity: 0;}
+#Page[active=true] *{opacity: 1;}
+
+/*
+    Content
+*/
+
+#Sec1{
+    margin-top: 5vh;
+    align-items: center;
+    font-size: 5vh;
+}
+
+#DownloadOptions{
+    margin-top: 5vh;
+    height: 25vh;
+    display: grid;
+    justify-content: center;
+    column-gap: 5%;
+    grid-template-columns: auto auto auto;
+}
+
+.DownloadOption{
+    margin-top: 2.5vh;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 1vh;
+    position: sticky;
+}
+
+.DownloadOption img {
+    visibility: visible;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    transition: none;
+}
+
+.DownloadOption:hover{
+    animation: enlargeDownloadOption 750ms;
+    height: 25vh; width: 25vh;
+    border: 5vh green;
+    margin-top: 0;
+    transition: none;
+}
+
+.OptionButton{visibility: hidden;}
+
+
+.DescriptorText{
+    text-align: center;
+}
+
+#Spotify{background-color: lightgreen;}
+#Youtube{background-color: grey;}
+#Search{background-color: #444444;}
+
+/*
+    Input details
+*/
+
+#Sec2[active=true]{
+    animation: appear2 750ms;
+    align-items: center;
+    font-size: 5vh;
+    opacity: 1;
+}
+
+
+
+#QueryInput{
+    opacity: 1;
+    height: 10vh;
+    width: 50vw;
+    background-color: grey;
+    border-radius: 5vh;
+    font-size: 6vh;
+    border: solid;
+}
+
+#video{height: 5vh; width: 5vh;}
+
+#grid2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#Submit{
+    background-color: black;
+    height: 10vh; width: 20vw;
+    font-size: 8vh;
+    font-family: TheHand;
+    color: white;
+    border-radius: 5vh;
+    margin-top: calc(5vh);
+    border: solid white;
+}
+
+#Submit:hover{
+    border: solid pink;
+    color: pink;
+    transition: 250ms;
+}
+
+#Submit:disabled{border: grey; color: grey;}
+
+#error{color: red;}
+
+#FormDiv{
+    margin-top: 2vh;
+}
+
+.searchDownload:hover{
+    cursor: pointer;
+}
+
+/*
+    Page configurations
+*/
+
+::-webkit-scrollbar{width: 1vw;}
+::-webkit-scrollbar-track{opacity: 0; background-color: none; border: none;}
+::-webkit-scrollbar-thumb{background: linear-gradient(to bottom right, red, blue);}
+
+table{
+    border: solid pink;
+    align-self: center;
+    font-size: 3vh;
+    max-width: 85vw;
+    margin-bottom: 10vh;
+}
+
+tr{
+    border: solid white;
+}

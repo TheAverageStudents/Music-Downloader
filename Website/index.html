@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Downloader</title>
+        <meta name="viewport" content="height=device-height, initial-scale=1">
+        <meta name="description" content="Download songs using spotify links or by simply searching!">
+        <meta name="bingbot" content="index, follow">
+        <link rel="icon" href="../Resources/icon.jpg">
+    </head>
+
+    <body>
+        <div id="BeginningLoader"></div>
+        <div id="Page" hidden=true>
+            <div id="HeadingText">
+                Music Downloader
+            </div>
+            <div id="coverup"></div>
+            <section id="Sec1">
+                Where would you like to download from?<br/>
+                <div id="DownloadOptions">
+                    <span class="DownloadOption" id="Spotify">
+                        <button class="OptionButton" onclick="console.log('Clicked!')">
+                            <img src="../Resources/spotify_logo.png">
+                        </button>
+                    </span>
+                    <span class="DownloadOption" id="Youtube">
+                        <button class="OptionButton" onclick="console.log('Clicked!')">
+                            <img src="../Resources/youtube_logo.png">
+                        </button>
+                    </span>
+                    <span class="DownloadOption" id="Search">
+                        <button class="OptionButton">
+                            <img src="../Resources/Search_Logo.png">
+                        </button>
+                    </span>
+                    <span class="DescriptorText">Spotify</span>
+                    <span class="DescriptorText">YouTube</span>
+                    <span class="DescriptorText">Search...</span>
+                </div>
+            </section>
+            <section id="Sec2" hidden=true>
+                <center>
+                    <div id="QueryArea">
+                        <form method="post" action="/download" id="form">
+                            <label>Great!</label><br/>
+                            <label id="ConditionalText1"></label><br/>
+                            <div id="FormDiv">
+                                <input type="text" id="QueryInput">
+                                <br/>
+                                <label id="stats"></label>
+                                <br/>
+                                <input type="checkbox" name="video" id="video" hidden><span id="text1" hidden>Include video</span>
+                                <br/>
+                                <button id="Submit" type="button" disabled>
+                                    Submit
+                                </button>
+                            </div>
+                            <label id="error"></label>
+                            <input type="hidden" name="q" id="content_query">
+                            <input type="hidden" name="type" id="content_type">
+                            <input type="hidden" name="param" id="content_param">
+                        </form>
+                    </div>
+                </center>
+            </section>
+        </div>
+    </body>
+
+    <div id="scripts">
+        <script src="../Scripts/index.js"></script>
+        <link rel="stylesheet" href="../Styles/index.css">
+    </div>
+</html>
