@@ -10,10 +10,10 @@ const path = require("path")
 const parser = require("body-parser").urlencoded({extended : false})
 
 var spotify = new spotifyApi({
-    clientId : "714dc4b9b4354f97982be83b2b76b4d5",
-    clientSecret : "4d1f590c40d043329305965fb7c40d49",
-    redirectUri : "https://feedback.gigipopi.repl.co",
-    accessToken : "BQDp5sUhR1bJ-wM8KsY2lk_Qr-7_M4fGyCKctnaaNuU-udkFqoxfd9nwsTNkvO0tcmugtBO8dalvHSuSqNl_Ezfq7MXPt8HIDSA4m10AZfBgb_bdYOySTd59EijT95aKP8fQuX6k3qonJeK4MaPi6IebXrcscRw"
+    clientId : "",
+    clientSecret : "",
+    redirectUri : "",
+    accessToken : ""
 })
 
 function generateID() {
